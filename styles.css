@@ -1,0 +1,45 @@
+html,
+body,
+#body-wrapper {
+    margin: 0;
+    padding: 0;
+}
+
+#body-wrapper {
+    border: 1px solid red;
+    height: 100vh;
+    z-index: 1;
+}
+
+#header {
+    border: 1px solid blue;
+    height: calc(7%);
+    z-index: 2;
+}
+
+#main {
+    border: 1px solid green;
+    display: flex;
+    height: calc(86%);
+    z-index: 2;
+}
+
+#sidebar {
+    border: 1px solid yellow;
+    width: calc(25%);
+    height: calc(100%);
+    z-index: 3;
+}
+
+#content {
+    border: 1px solid aqua;
+    width: calc(75%);
+    height: calc(100%);
+    z-index: 3;
+}
+
+#footer {
+    border: 1px solid blue;
+    height: calc(7%);
+    z-index: 2;
+}
