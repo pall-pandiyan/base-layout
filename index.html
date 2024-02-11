@@ -4,22 +4,98 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="Content-Security-Policy" content="media-src 'self' data:" />
-  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
-  <title>Website</title>
-  <link rel="stylesheet" href="./styles.css" />
+  <!-- <meta http-equiv="Content-Security-Policy" content="media-src 'self' data:" />
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" /> -->
+  <title>Basic Website Design</title>
+  <!-- <link rel="stylesheet" href="./styles.css" /> -->
 </head>
 
 <body>
   <div id="body-wrapper">
-    <div id="header"></div>
+    <div id="header">
+      <div id="navbar">
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Downloads</a>
+        <a href="#">Support</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+      </div>
+    </div>
 
     <div id="main">
-      <div id="sidebar"></div>
-      <div id="content"></div>
+      <div id="sidebar-wrapper">
+        <div id="sidebar">
+          <a href="#">Home</a>
+          <a href="#">Products</a>
+          <a href="#">Downloads</a>
+          <a href="#">Support</a>
+          <a href="#">About Us</a>
+          <a href="#">Contact Us</a>
+        </div>
+      </div>
+
+      <div id="content">
+        <h1>Table view</h1>
+        <table>
+          <thead>
+            <tr>
+              <td>Sl. No</td>
+              <td>Register No</td>
+              <td>Name</td>
+              <td>Age</td>
+              <td>Marks</td>
+              <td>Result</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>ACF123547</td>
+              <td>Anabel</td>
+              <td>17</td>
+              <td>59</td>
+              <td>Pass</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>ACF123548</td>
+              <td>Bella</td>
+              <td>17</td>
+              <td>70</td>
+              <td>Pass</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>ACF123549</td>
+              <td>Catline</td>
+              <td>16</td>
+              <td>36</td>
+              <td>Fail</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>ACF123550</td>
+              <td>Dorathy</td>
+              <td>17</td>
+              <td>68</td>
+              <td>Pass</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>ACF123551</td>
+              <td>Emma</td>
+              <td>15</td>
+              <td>40</td>
+              <td>Pass</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
     <div id="footer"></div>
   </div>
+  <script src="./scripts.js"></script>
 </body>
 
 </html>
