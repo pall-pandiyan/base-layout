@@ -20,14 +20,20 @@ body {
     background-color: gray;
     /* border: 1px solid blue; */
     display: flex;
-    align-items: center;
-    justify-content: center;
     min-height: 7%;
     z-index: 2;
 }
 
 #navbar {
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mobile_navbar_icon {
+    display: none;
+    border: 1px solid;
+    padding: 3px 3px 0 3px;
 }
 
 #navbar a {
@@ -93,12 +99,20 @@ body {
 }
 
 @media (max-width: 600px) {
-    #header {
+    #mobile_navbar_icon {
         display: block;
-        height: auto;
+    }
+
+    #header,
+    #navbar a {
+        display: block;
     }
 
     #navbar {
-        display: block;
+        display: none;
     }
+
+    /* #navbar:hover~#navbar {
+        display: none;
+    } */
 }
